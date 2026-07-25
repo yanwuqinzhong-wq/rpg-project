@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>大陸戦記(仮) - RPG Project</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Meiryo", sans-serif;
+  }
+  #game-root {
+    position: relative;
+  }
+  canvas {
+    background: #000;
+    image-rendering: pixelated;
+    border: 2px solid #333;
+  }
+</style>
+</head>
+<body>
+  <div id="game-root">
+    <canvas id="game-canvas" width="960" height="540"></canvas>
+  </div>
+
+  <!-- エントリーポイント。type="module" によりES6 import/exportが使える -->
+  <script type="module" src="./src/core/Game.js"></script>
+</body>
+</html>
